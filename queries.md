@@ -1,3 +1,43 @@
+
+# Patient table 
+|  | column  | DATA TYPE     |
+|---|-------------|---------|
+| PK | patient_id  | INT     |
+|   |  first_name | TEXT    |
+|   | last_name   |    TEXT |
+|   | gender      | CHAR(1) |
+|   | birth_date  |    DATE |
+|   | city        |    TEXT |
+| FK | province_id | CHAR(2) |
+|   | allergies   |    TEXT |
+|   | height      |     INT |
+|   | weight      |     INT |
+
+#  admissions Table
+|  | column  | DATA TYPE     |
+|---|-------------|---------|
+| PK | patient_id  | int     |
+|   | patient_id | int    |
+|   | admission_date |  DATE   |
+|   | discharge_date  | DATE |
+|   | diagnosis  |    TEXT |
+|   | attending_doctor_id |INT|
+
+#  doctors Table
+|  | column  | DATA TYPE     |
+|---|-------------|---------|
+| PK | doctor_id  | int     |
+|   | first_name | TEXT    |
+|   | last_name |  TEXT   |
+|   | speciality  | TEXT |
+
+#  province_names Table
+|  | column  | DATA TYPE     |
+|---|-------------|---------|
+| PK | province_id  | CHAR(2)|
+|   | province_name | TEXT   |
+
+
 # QUESTION 1
 Show first name, last name, and gender of patients who's gender is 'M'
 ``` sql
